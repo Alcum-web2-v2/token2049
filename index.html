@@ -67,7 +67,7 @@
   .source { font-size: 12.5px; color: var(--muted); margin-top: 10px; max-width: none; }
 
   /* skyline strip: Marina Bay in three planes, line art over a faint copper dusk */
-  .skyline { position: relative; height: 220px; overflow: hidden; border-block: 1px solid var(--line-2); background: radial-gradient(60% 90% at 50% 100%, rgba(217,140,88,.10), transparent 70%), linear-gradient(180deg, var(--bg) 0%, #0D1116 100%); }
+  .skyline { position: relative; height: 220px; overflow: hidden; border-block: 1px solid var(--line-2); background: linear-gradient(180deg, var(--bg) 0%, #0D1116 100%); }
   .skyline svg { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: max(1400px, 100%); height: 220px; }
   .skyline .cap { position: absolute; top: 20px; left: 50%; transform: translateX(-560px); font-family: var(--mono); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); white-space: nowrap; z-index: 1; }
   .skyline .cap b { color: var(--copper); font-weight: 500; }
@@ -197,7 +197,7 @@
       <defs>
         <pattern id="win" width="6" height="7" patternUnits="userSpaceOnUse"><rect width="6" height="7" fill="#0F141A"/><rect x="1.5" y="1.5" width="2.2" height="2.6" fill="#1E2630"/></pattern>
         <pattern id="winb" width="8" height="9" patternUnits="userSpaceOnUse"><rect width="8" height="9" fill="#12181F"/><rect x="2" y="2" width="3" height="3.2" fill="#2A3340"/></pattern>
-        <radialGradient id="glow" cx="50%" cy="100%" r="60%"><stop offset="0" stop-color="#D98C58" stop-opacity=".16"/><stop offset="1" stop-color="#D98C58" stop-opacity="0"/></radialGradient>
+        <radialGradient id="glow" cx="50%" cy="100%" r="55%"><stop offset="0" stop-color="#D98C58" stop-opacity=".12"/><stop offset="1" stop-color="#D98C58" stop-opacity="0"/></radialGradient>
         <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D98C58" stop-opacity=".07"/><stop offset="1" stop-color="#D98C58" stop-opacity="0"/></linearGradient>
       </defs>
       <rect x="300" y="60" width="800" height="130" fill="url(#glow)"/>
