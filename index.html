@@ -41,7 +41,7 @@
   .btn:focus-visible, a:focus-visible, button:focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
 
   /* header */
-  header { position: sticky; top: 0; z-index: 20; backdrop-filter: blur(10px); background: rgba(11,14,18,.72); border-bottom: 1px solid var(--line-2); }
+  header { position: sticky; top: 0; z-index: 20; -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); background: rgba(11,14,18,.72); border-bottom: 1px solid var(--line-2); }
   .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0; }
   .brand { display: flex; align-items: center; gap: 12px; color: var(--ink); }
   .brand svg { display: block; height: 20px; width: auto; }
@@ -52,11 +52,11 @@
 
   /* hero */
   .hero { position: relative; overflow: hidden; padding-block: clamp(48px, 9vw, 110px) clamp(40px, 6vw, 72px); }
-  .hero::before { content: ""; position: absolute; inset: -40% -20% auto -20%; height: 120%; background: radial-gradient(60% 50% at 70% 20%, rgba(217,140,88,.18), transparent 60%), radial-gradient(40% 40% at 15% 70%, rgba(99,187,168,.10), transparent 60%); pointer-events: none; }
+  .hero::before { content: ""; position: absolute; top: -40%; right: -20%; bottom: auto; left: -20%; height: 120%; background: radial-gradient(60% 50% at 70% 20%, rgba(217,140,88,.18), transparent 60%), radial-gradient(40% 40% at 15% 70%, rgba(99,187,168,.10), transparent 60%); pointer-events: none; }
   .hero .wrap { position: relative; display: grid; grid-template-columns: 1.15fr .85fr; gap: 40px; align-items: end; }
   @media (max-width: 860px) { .hero .wrap { grid-template-columns: 1fr; } }
-  .event { display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px 8px 10px; border-radius: 999px; border: 1px solid rgba(217,140,88,.45); background: var(--copper-soft); color: var(--ink); font-size: 14px; font-weight: 600; }
-  .event i { width: 8px; height: 8px; border-radius: 50%; background: var(--copper); box-shadow: 0 0 0 4px rgba(217,140,88,.18); }
+  .event { display: inline-block; max-width: 100%; padding: 8px 14px 8px 12px; border-radius: 22px; border: 1px solid rgba(217,140,88,.45); background: var(--copper-soft); color: var(--ink); font-size: 14px; font-weight: 600; line-height: 1.5; }
+  .event i { display: inline-block; vertical-align: middle; width: 8px; height: 8px; margin: -2px 10px 0 0; border-radius: 50%; background: var(--copper); box-shadow: 0 0 0 4px rgba(217,140,88,.18); }
   .event .mono { font-family: var(--mono); font-weight: 500; color: var(--ink-2); }
   .cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
   .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
@@ -71,7 +71,7 @@
   .skyline svg { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: max(1400px, 100%); height: 220px; }
   .skyline .cap { position: absolute; top: 20px; left: 50%; transform: translateX(-560px); font-family: var(--mono); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); white-space: nowrap; z-index: 1; }
   .skyline .cap b { color: var(--copper); font-weight: 500; }
-  @media (max-width: 1180px) { .skyline .cap { left: clamp(16px, 4vw, 40px); transform: none; } }
+  @media (max-width: 1180px) { .skyline .cap { left: clamp(16px, 4vw, 40px); right: clamp(16px, 4vw, 40px); transform: none; white-space: normal; line-height: 1.5; } }
 
   section { padding-block: clamp(40px, 6vw, 72px); }
   section + section { border-top: 1px solid var(--line-2); }
@@ -124,7 +124,8 @@
   .ad { display: inline-block; font-family: var(--mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--line); border-radius: 6px; padding: 2px 8px; margin-bottom: 10px; }
 
   /* audience gate */
-  .gate { position: fixed; inset: 0; z-index: 50; background: rgba(11,14,18,.86); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; padding: 20px; }
+  .gate { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 50; background: rgba(11,14,18,.86); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; padding: 20px; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+  @media (max-height: 560px) { .gate { align-items: flex-start; } }
   .gate[hidden] { display: none; }
   .gate .box { width: min(560px, 100%); background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 28px; box-shadow: 0 40px 90px -30px rgba(0,0,0,.8); }
   .gate h2 { font-size: 22px; }
