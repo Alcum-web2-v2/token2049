@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ALCUM at TOKEN2049 Singapore</title>
+<meta name="description" content="Cuprum Vault by ALCUM AG: Swiss tracker certificates on physical copper trade finance, valued daily in USDC. Meet us at TOKEN2049 Singapore, 7–8 October 2026.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="ALCUM at TOKEN2049 Singapore">
+<meta property="og:description" content="Physical copper trade finance, tokenised. Daily NAV in USDC, signed and anchored on-chain. Meet us at TOKEN2049 Singapore, 7–8 October 2026.">
+<meta name="theme-color" content="#0B0E12">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='40.5 -1.5 27 27'%3E%3Cpath d='M65.024 7.48619C64.0003 4.94522 62.1349 2.833 59.7399 1.50307C57.345 0.173141 54.5659 -0.293773 51.8678 0.180483C49.1698 0.654738 46.7165 2.04138 44.9187 4.1083C43.1208 6.17522 42.0875 8.79698 41.9917 11.5347C41.8959 14.2725 42.7434 16.9601 44.3924 19.1476C46.0413 21.3351 48.3917 22.8899 51.05 23.5516C53.7083 24.2133 56.5132 23.9418 58.9953 22.7825C61.4773 21.6233 63.4858 19.6466 64.6846 17.1834L59.2735 14.5499C58.6782 15.7729 57.681 16.7543 56.4486 17.3299C55.2162 17.9055 53.8235 18.0403 52.5036 17.7118C51.1837 17.3832 50.0167 16.6113 49.198 15.5251C48.3792 14.439 47.9584 13.1045 48.006 11.7452C48.0536 10.3859 48.5666 9.08411 49.4593 8.05785C50.352 7.03158 51.5701 6.34309 52.9097 6.10761C54.2493 5.87214 55.6292 6.10397 56.8183 6.7643C58.0075 7.42463 58.9337 8.47339 59.4419 9.73503L65.024 7.48619Z' fill='%23ECE8E1'/%3E%3Ccircle cx='54' cy='12' r='4' fill='%23D98C58'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #0B0E12; --bg-2: #0F141A; --surface: #11161C; --surface-2: #161C24; --line: #232B35; --line-2: #1B222B;
+    --ink: #ECE8E1; --ink-2: #C9C4BB; --muted: #8E95A0;
+    --copper: #D98C58; --copper-deep: #B17C43; --copper-soft: rgba(217,140,88,.14); --patina: #63BBA8; --rose: #E68F85;
+    --sans: "Manrope", "Helvetica Neue", Arial, sans-serif; --mono: "IBM Plex Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  a { color: var(--copper); text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding-inline: clamp(16px, 4vw, 40px); }
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--copper); }
+  h1 { font-size: clamp(34px, 5.6vw, 64px); line-height: 1.02; letter-spacing: -.03em; margin: 14px 0 18px; font-weight: 800; text-wrap: balance; }
+  h2 { font-size: clamp(24px, 3vw, 34px); line-height: 1.15; letter-spacing: -.02em; margin: 0 0 10px; font-weight: 800; text-wrap: balance; }
+  h3 { font-size: 18px; margin: 0 0 6px; font-weight: 700; }
+  p { margin: 0 0 12px; color: var(--ink-2); max-width: 68ch; }
+  .lede { font-size: clamp(17px, 1.6vw, 20px); color: var(--ink-2); max-width: 60ch; }
+  .num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 12px; font-weight: 700; font-size: 15px; border: 1px solid var(--line); background: var(--surface-2); color: var(--ink); transition: border-color .15s, background .15s, transform .15s; }
+  .btn:hover { text-decoration: none; border-color: var(--copper); transform: translateY(-1px); }
+  .btn.primary { background: linear-gradient(135deg, #E8A06A, #B9743F); color: #15100B; border-color: transparent; box-shadow: 0 10px 30px -14px rgba(217,140,88,.8); }
+  .btn.primary:hover { background: linear-gradient(135deg, #F0AA74, #C27E47); }
+  .btn:focus-visible, a:focus-visible, button:focus-visible { outline: 2px solid var(--copper); outline-offset: 3px; }
+
+  /* header */
+  header { position: sticky; top: 0; z-index: 20; backdrop-filter: blur(10px); background: rgba(11,14,18,.72); border-bottom: 1px solid var(--line-2); }
+  .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0; }
+  .brand { display: flex; align-items: center; gap: 12px; color: var(--ink); }
+  .brand svg { display: block; height: 20px; width: auto; }
+  .brand span { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); padding-left: 12px; border-left: 1px solid var(--line); }
+  .nav .links { display: flex; gap: 8px; }
+  .nav .links .btn { padding: 9px 14px; font-size: 14px; }
+  @media (max-width: 640px) { .brand span { display: none; } .nav .links .ghost { display: none; } }
+
+  /* hero */
+  .hero { position: relative; overflow: hidden; padding-block: clamp(48px, 9vw, 110px) clamp(40px, 6vw, 72px); }
+  .hero::before { content: ""; position: absolute; inset: -40% -20% auto -20%; height: 120%; background: radial-gradient(60% 50% at 70% 20%, rgba(217,140,88,.18), transparent 60%), radial-gradient(40% 40% at 15% 70%, rgba(99,187,168,.10), transparent 60%); pointer-events: none; }
+  .hero .wrap { position: relative; display: grid; grid-template-columns: 1.15fr .85fr; gap: 40px; align-items: end; }
+  @media (max-width: 860px) { .hero .wrap { grid-template-columns: 1fr; } }
+  .event { display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px 8px 10px; border-radius: 999px; border: 1px solid rgba(217,140,88,.45); background: var(--copper-soft); color: var(--ink); font-size: 14px; font-weight: 600; }
+  .event i { width: 8px; height: 8px; border-radius: 50%; background: var(--copper); box-shadow: 0 0 0 4px rgba(217,140,88,.18); }
+  .event .mono { font-family: var(--mono); font-weight: 500; color: var(--ink-2); }
+  .cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  @media (max-width: 520px) { .stats { grid-template-columns: 1fr; } }
+  .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 18px 16px; }
+  .stat b { display: block; font-family: var(--mono); font-size: clamp(26px, 3vw, 34px); font-weight: 500; color: var(--copper); letter-spacing: -.02em; line-height: 1.1; }
+  .stat span { display: block; margin-top: 8px; font-size: 13px; color: var(--muted); line-height: 1.4; }
+  .source { font-size: 12.5px; color: var(--muted); margin-top: 10px; max-width: none; }
+
+  /* skyline strip */
+  .skyline { position: relative; height: 120px; overflow: hidden; border-block: 1px solid var(--line-2); background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%); }
+  .skyline svg { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: max(1120px, 100%); height: 110px; }
+  .skyline .cap { position: absolute; left: 0; right: 0; top: 14px; text-align: center; font-family: var(--mono); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+
+  section { padding-block: clamp(40px, 6vw, 72px); }
+  section + section { border-top: 1px solid var(--line-2); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  @media (max-width: 860px) { .grid2, .grid3 { grid-template-columns: 1fr; } }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 22px; }
+  .card p:last-child { margin-bottom: 0; }
+  .card.copper { border-color: rgba(217,140,88,.45); background: linear-gradient(180deg, rgba(217,140,88,.08), transparent 70%), var(--surface); }
+  .card.patina { border-color: rgba(99,187,168,.4); background: linear-gradient(180deg, rgba(99,187,168,.07), transparent 70%), var(--surface); }
+  .tag { display: inline-block; font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; padding: 4px 9px; border-radius: 7px; margin-bottom: 10px; }
+  .tag.copper { color: var(--copper); background: var(--copper-soft); }
+  .tag.patina { color: var(--patina); background: rgba(99,187,168,.14); }
+
+  /* flow */
+  .flow { margin: 26px 0 8px; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px; overflow-x: auto; }
+  .flow svg { display: block; width: 100%; min-width: 760px; height: auto; font-family: var(--sans); }
+  .flow .cap { font-size: 13px; color: var(--muted); margin: 10px 2px 0; }
+
+  /* on-chain */
+  .onchain li { display: grid; grid-template-columns: 26px 1fr; gap: 12px; align-items: start; padding: 12px 0; border-top: 1px solid var(--line-2); }
+  .onchain li:first-child { border-top: 0; }
+  .onchain ul { list-style: none; padding: 0; margin: 0; }
+  .onchain b { display: block; color: var(--ink); }
+  .onchain span { color: var(--ink-2); font-size: 15px; }
+  .onchain svg { width: 22px; height: 22px; color: var(--copper); margin-top: 3px; }
+
+  /* terms */
+  dl.terms { display: grid; grid-template-columns: 1fr 1fr; gap: 0 28px; margin: 0; }
+  @media (max-width: 760px) { dl.terms { grid-template-columns: 1fr; } }
+  dl.terms > div { padding: 14px 0; border-top: 1px solid var(--line-2); }
+  dl.terms dt { font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+  dl.terms dd { margin: 0; color: var(--ink-2); font-size: 15px; }
+  dl.terms dd b { color: var(--ink); font-weight: 600; }
+
+  /* contact */
+  .contact { background: radial-gradient(70% 90% at 80% 10%, rgba(217,140,88,.16), transparent 60%), var(--surface); border: 1px solid rgba(217,140,88,.35); border-radius: 22px; padding: clamp(24px, 4vw, 40px); display: grid; grid-template-columns: 1.2fr .8fr; gap: 28px; align-items: center; }
+  @media (max-width: 860px) { .contact { grid-template-columns: 1fr; } }
+  .contact .who { font-size: 15px; color: var(--ink-2); }
+  .contact .who b { color: var(--ink); }
+  .contact .addr { font-family: var(--mono); font-size: 15px; color: var(--ink); }
+  .qr { justify-self: end; background: #fff; border-radius: 14px; padding: 10px; width: 150px; height: 150px; }
+  .qr svg { display: block; width: 100%; height: 100%; }
+  @media (max-width: 860px) { .qr { justify-self: start; } }
+
+  footer { border-top: 1px solid var(--line-2); padding-block: 28px 40px; }
+  .disc { font-size: 12.5px; color: var(--muted); line-height: 1.55; max-width: none; }
+  .disc b { color: var(--ink-2); }
+  .foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; font-size: 13px; color: var(--muted); margin-top: 18px; }
+  .ad { display: inline-block; font-family: var(--mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--line); border-radius: 6px; padding: 2px 8px; margin-bottom: 10px; }
+
+  /* audience gate */
+  .gate { position: fixed; inset: 0; z-index: 50; background: rgba(11,14,18,.86); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; padding: 20px; }
+  .gate[hidden] { display: none; }
+  .gate .box { width: min(560px, 100%); background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 28px; box-shadow: 0 40px 90px -30px rgba(0,0,0,.8); }
+  .gate h2 { font-size: 22px; }
+  .gate p { font-size: 15px; }
+  .gate .row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
+</style>
+</head>
+<body>
+
+<div class="gate" id="gate" hidden>
+  <div class="box" role="dialog" aria-labelledby="gateTitle" aria-modal="true">
+    <div class="eyebrow">Before you continue</div>
+    <h2 id="gateTitle">For professional and institutional investors</h2>
+    <p>The information on this page concerns a structured product under Art. 70 FinSA and is intended only for professional and institutional clients within the meaning of the Swiss Financial Services Act. It is advertising, not an offer. The PPM, Final Terms and Subscription Agreement prevail.</p>
+    <div class="row">
+      <button class="btn primary" id="gateYes">I am a professional or institutional investor</button>
+      <a class="btn" href="https://alcum.com">Take me to alcum.com</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="https://alcum.com" aria-label="ALCUM">
+      <svg viewBox="0 0 120 24" role="img" aria-hidden="true">
+        <path d="M119.644 0.251953V23.7683H113.106V10.7926L108.67 23.7683H103.199L98.7293 10.6925V23.7683H92.1914V0.251953H100.097L106.001 15.5292L111.772 0.251953H119.644Z" fill="#ECE8E1"/>
+        <path d="M74.8493 0.251953V13.8948C74.8493 15.1623 75.1383 16.1408 75.7165 16.8302C76.3169 17.5195 77.2176 17.8642 78.4184 17.8642C79.6192 17.8642 80.5199 17.5195 81.1203 16.8302C81.7429 16.1185 82.0543 15.1401 82.0543 13.8948V0.251953H88.5921V13.8948C88.5921 16.0518 88.1363 17.8976 87.2245 19.432C86.3128 20.9441 85.0675 22.0894 83.4886 22.8677C81.932 23.6238 80.1974 24.0018 78.285 24.0018C76.3725 24.0018 74.6602 23.6238 73.1481 22.8677C71.6581 22.0894 70.4795 20.9441 69.6123 19.432C68.7672 17.9198 68.3447 16.0741 68.3447 13.8948V0.251953H74.8493Z" fill="#ECE8E1"/>
+        <path d="M33.3191 18.7648H40.6242V23.7683H26.7812V0.251953H33.3191V18.7648Z" fill="#ECE8E1"/>
+        <path d="M16.4781 19.9323H8.13899L6.87145 23.7683H0L8.57263 0.251953H16.1112L24.6505 23.7683H17.7457L16.4781 19.9323ZM14.8437 14.9288L12.3086 7.32354L9.80682 14.9288H14.8437Z" fill="#ECE8E1"/>
+        <circle cx="54" cy="12" r="4" fill="#D98C58"/>
+        <path d="M65.024 7.48619C64.0003 4.94522 62.1349 2.833 59.7399 1.50307C57.345 0.173141 54.5659 -0.293773 51.8678 0.180483C49.1698 0.654738 46.7165 2.04138 44.9187 4.1083C43.1208 6.17522 42.0875 8.79698 41.9917 11.5347C41.8959 14.2725 42.7434 16.9601 44.3924 19.1476C46.0413 21.3351 48.3917 22.8899 51.05 23.5516C53.7083 24.2133 56.5132 23.9418 58.9953 22.7825C61.4773 21.6233 63.4858 19.6466 64.6846 17.1834L59.2735 14.5499C58.6782 15.7729 57.681 16.7543 56.4486 17.3299C55.2162 17.9055 53.8235 18.0403 52.5036 17.7118C51.1837 17.3832 50.0167 16.6113 49.198 15.5251C48.3792 14.439 47.9584 13.1045 48.006 11.7452C48.0536 10.3859 48.5666 9.08411 49.4593 8.05785C50.352 7.03158 51.5701 6.34309 52.9097 6.10761C54.2493 5.87214 55.6292 6.10397 56.8183 6.7643C58.0075 7.42463 58.9337 8.47339 59.4419 9.73503L65.024 7.48619Z" fill="#ECE8E1"/>
+      </svg>
+      <span>Cuprum Vault</span>
+    </a>
+    <div class="links">
+      <a class="btn ghost" href="#how">How it works</a>
+      <a class="btn primary" href="#meet">Meet us</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <div class="event"><i></i>TOKEN2049 Singapore <span class="mono">· 7–8 Oct 2026 · Marina Bay Sands</span></div>
+        <div class="eyebrow" style="margin-top:22px">ALCUM AG · Switzerland</div>
+        <h1>Physical copper trade finance, tokenised.</h1>
+        <p class="lede">ALCUM buys secondary copper, has it refined and sold to industrial buyers, and lets investors take part in those trades through Swiss tracker certificates on Ethereum — valued every day in USDC.</p>
+        <div class="cta">
+          <a class="btn primary" href="#meet">Book a meeting at TOKEN2049</a>
+          <a class="btn" href="#how">See how it works</a>
+        </div>
+      </div>
+      <div>
+        <div class="stats">
+          <div class="stat"><b>8 yrs</b><span>underlying copper trading business</span></div>
+          <div class="stat"><b>8.54%</b><span>gross EUR return, Q1–Q3 2026, not annualised</span></div>
+          <div class="stat"><b>Daily</b><span>NAV in USDC, signed and anchored on-chain</span></div>
+        </div>
+        <p class="source">Source: ALCUM. Gross EUR performance before management and performance fees. Certificate returns in USDC also reflect fees and exchange rates. Past performance is not indicative of future results.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="skyline" aria-hidden="true">
+    <div class="cap">Singapore · Marina Bay · 7–8 October 2026</div>
+    <svg viewBox="0 0 1120 110" preserveAspectRatio="xMidYMax slice">
+      <defs><linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#232B35"/><stop offset="1" stop-color="#11161C"/></linearGradient></defs>
+      <!-- Marina Bay Sands: three towers and the sky park -->
+      <path fill="url(#sk)" d="M0 110V86h40V70h18v16h30V60h22v26h36V54h20v32h60V78h16v-6h14v6h16v8h40V48l12-10 12 10v38h30V66h18v20h24V44h26v42h48V56h22v30h60V40h30v46h40V62h22v24h50V50h26v36h44V58h20v28h50V44h28v42h60V70h18v16h30V52h22v34h40V66h20v20h40V60h22v26h36V74h18v12h20V110z"/>
+      <g fill="#2A3340">
+        <rect x="430" y="36" width="34" height="74" rx="2"/><rect x="474" y="30" width="34" height="80" rx="2"/><rect x="518" y="36" width="34" height="74" rx="2"/>
+        <path d="M418 34c40-18 100-18 146 0 8 3 8 10 0 12-46 12-106 12-146 0-8-2-8-9 0-12z" fill="#36404E"/>
+      </g>
+      <!-- the Flyer and a Supertree, loosely -->
+      <circle cx="760" cy="62" r="30" fill="none" stroke="#2A3340" stroke-width="3"/><circle cx="760" cy="62" r="3" fill="#2A3340"/><path d="M760 92v18" stroke="#2A3340" stroke-width="3"/>
+      <path d="M910 110V60" stroke="#2A3340" stroke-width="5"/><path d="M878 58c10-16 54-16 64 0-10 6-54 6-64 0z" fill="#2A3340"/>
+      <!-- copper horizon line -->
+      <rect x="0" y="108" width="1120" height="2" fill="#D98C58" opacity=".55"/>
+    </svg>
+  </div>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="eyebrow">What we do</div>
+      <h2>A complete copper trade, from purchase to proceeds.</h2>
+      <p class="lede">The strategy targets net trading margins: ALCUM sources secondary copper whose quality and recoverable content require specialist assessment, and supplies verified metal to established industrial buyers. Experienced operators manage processing, logistics and settlement through an existing commercial network. A typical trade cycle lasts two to six weeks.</p>
+      <div class="flow">
+        <svg viewBox="0 0 1000 190" role="img" aria-label="Flow: USDC subscription into the series escrow; copper purchased and refined; sold to an industrial buyer; proceeds return and the daily NAV in USDC reflects the result.">
+          <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#D98C58"/></marker></defs>
+          <g font-size="13" fill="#ECE8E1">
+            <rect x="10" y="40" width="200" height="92" rx="14" fill="#161C24" stroke="#232B35"/>
+            <text x="110" y="70" text-anchor="middle" font-weight="700" font-size="15">1 · Subscribe in USDC</text>
+            <text x="110" y="92" text-anchor="middle" fill="#C9C4BB">into the series escrow</text>
+            <text x="110" y="110" text-anchor="middle" fill="#C9C4BB">xCUP issued at Friday's NAV</text>
+
+            <rect x="270" y="40" width="200" height="92" rx="14" fill="#161C24" stroke="#232B35"/>
+            <text x="370" y="70" text-anchor="middle" font-weight="700" font-size="15">2 · Copper is bought</text>
+            <text x="370" y="92" text-anchor="middle" fill="#C9C4BB">secondary copper, assessed</text>
+            <text x="370" y="110" text-anchor="middle" fill="#C9C4BB">refined where needed</text>
+
+            <rect x="530" y="40" width="200" height="92" rx="14" fill="#161C24" stroke="#232B35"/>
+            <text x="630" y="70" text-anchor="middle" font-weight="700" font-size="15">3 · Sold to industry</text>
+            <text x="630" y="92" text-anchor="middle" fill="#C9C4BB">verified metal to established</text>
+            <text x="630" y="110" text-anchor="middle" fill="#C9C4BB">industrial buyers, 2–6 weeks</text>
+
+            <rect x="790" y="40" width="200" height="92" rx="14" fill="#161C24" stroke="#D98C58"/>
+            <text x="890" y="70" text-anchor="middle" font-weight="700" font-size="15" fill="#D98C58">4 · NAV, daily</text>
+            <text x="890" y="92" text-anchor="middle" fill="#C9C4BB">proceeds collected, result</text>
+            <text x="890" y="110" text-anchor="middle" fill="#C9C4BB">in the unit value, in USDC</text>
+          </g>
+          <g stroke="#D98C58" stroke-width="2" fill="none" marker-end="url(#ar)">
+            <path d="M210 86H262"/><path d="M470 86H522"/><path d="M730 86H782"/>
+          </g>
+          <path d="M890 132v22H110v-20" stroke="#63BBA8" stroke-width="1.6" fill="none" stroke-dasharray="5 4" marker-end="url(#ar)"/>
+          <text x="500" y="178" text-anchor="middle" font-size="12.5" fill="#8E95A0">redemptions every second Friday at that day's NAV, paid in USDC within three Zurich banking days</text>
+        </svg>
+        <div class="cap">Underlying trades generate EUR cash flows; the certificates are valued and settled in USDC.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="eyebrow">Two strategies</div>
+      <h2>One underlying business, two exposures.</h2>
+      <div class="grid2" style="margin-top:18px">
+        <div class="card copper">
+          <span class="tag copper">xCUPa · unhedged</span>
+          <h3>Trading returns plus copper price</h3>
+          <p>Participation in the trading margin together with exposure to copper-price movements over the cycle.</p>
+        </div>
+        <div class="card patina">
+          <span class="tag patina">xCUPb · hedged</span>
+          <h3>Trading returns, copper price hedged</h3>
+          <p>Hedging is used to reduce copper-price exposure and isolate the trading margin.</p>
+        </div>
+      </div>
+      <p class="source">Both strategies remain exposed to currency, counterparty and liquidity risks.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap grid2" style="align-items:start">
+      <div>
+        <div class="eyebrow">Built on-chain</div>
+        <h2>Verifiable by design.</h2>
+        <p class="lede">The certificates are ERC-20 tokens. The money, the units and the daily valuation leave a trail anyone can check.</p>
+      </div>
+      <div class="card onchain">
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/></svg><div><b>USDC in, USDC out</b><span>Subscriptions sit in a per-series escrow contract until units are issued; redemptions are paid from the series' own custody.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg><div><b>Daily NAV, signed and anchored</b><span>Each day's valuation is signed by the calculation agent and its hash written to the chain, so a published figure cannot be altered afterwards.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V8a5 5 0 0110 0v3"/></svg><div><b>Multisig custody, no admin override of price</b><span>Operations run through Safe multisigs; units are issued only by the escrow, only at the anchored price of the day.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><div><b>Allowlisted wallets, your own keys</b><span>Only KYC/KYB-cleared wallets can hold the certificates. You connect your own wallet; ALCUM never holds your keys.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="eyebrow">Key terms</div>
+      <h2>Swiss tracker certificates, evergreen.</h2>
+      <dl class="terms" style="margin-top:18px">
+        <div><dt>Instrument</dt><dd><b>Evergreen Swiss tracker certificates</b> (SSPA 1300) issued by ALCUM AG, represented by ERC-20 tokens.</dd></div>
+        <div><dt>Valuation &amp; settlement</dt><dd><b>Daily NAV and settlement in USDC.</b> Underlying trades generate EUR cash flows.</dd></div>
+        <div><dt>Subscriptions</dt><dd><b>Weekly</b>, admitted at Friday's approved NAV. Onboarding complete and cleared funds received by 12:00 UTC that Friday.</dd></div>
+        <div><dt>Redemptions</dt><dd><b>Every second Friday.</b> Notice by 12:00 UTC on the preceding Friday; priced at the processing Friday's NAV, paid within three Zurich banking days. Available cash is allocated pro rata; unfulfilled certificates remain invested.</dd></div>
+        <div><dt>Fees</dt><dd><b>1.5% p.a. management</b>, accrued daily. <b>10% performance</b> on gains above the series high-water mark, after costs and management fees; both crystallise monthly, performance also on redemption.</dd></div>
+        <div><dt>Oversight &amp; collateral</dt><dd>ALCUM approves counterparties and oversees capital deployment and transaction records. Security supports the issuer's obligations, with recourse limited to the relevant assets and proceeds; an independent Collateral Agent holds enforcement rights.</dd></div>
+        <div><dt>Eligibility</dt><dd><b>Professional and institutional investors</b>, subject to KYC/KYB and issuer approval. U.S. Persons and sanctions-restricted investors are excluded.</dd></div>
+        <div><dt>Documents</dt><dd>PPM, Final Terms and Subscription Agreement — provided after client status under FinSA is confirmed.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="meet">
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <div class="eyebrow">Meet us in Singapore</div>
+          <h2>TOKEN2049, 7–8 October 2026.</h2>
+          <p class="who">Write to <b>Justas Pangonis</b> to book a slot at Marina Bay Sands, or ask for the product documents once your FinSA client status is confirmed.</p>
+          <p class="addr"><a href="mailto:justas.pangonis@alcum.com?subject=TOKEN2049%20Singapore%20%E2%80%94%20meeting%20with%20ALCUM">justas.pangonis@alcum.com</a><br><a href="mailto:info@alcum.com">info@alcum.com</a><br><a href="https://alcum.com">alcum.com</a></p>
+          <div class="cta"><a class="btn primary" href="mailto:justas.pangonis@alcum.com?subject=TOKEN2049%20Singapore%20%E2%80%94%20meeting%20with%20ALCUM">Book a meeting</a></div>
+        </div>
+        <div class="qr" aria-label="QR code: this page">
+          <!--QR-->
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="ad">Advertisement · Art. 68 FinSA</span>
+    <p class="disc">This confidential material is provided for information only to eligible professional and institutional investors. Professional or institutional client status under the Swiss Financial Services Act (FinSA) must be confirmed before product-specific documentation is provided. This is not an offering document, offer, solicitation, recommendation or investment, legal or tax advice and must not form the basis of an investment decision. <b>The PPM, Final Terms and Subscription Agreement prevail.</b> The certificates are structured products within the meaning of Art. 70 FinSA. They are neither collective investment schemes nor subject to authorisation or product supervision by FINMA. Investors bear the issuer risk of ALCUM AG. Where distribution relies on reverse solicitation, the recipient's exclusive, unsolicited initiative is required, subject to applicable law. Receipt alone does not establish reverse solicitation. Further distribution requires ALCUM's consent. U.S. Persons and sanctions-restricted investors are excluded. Historical gross EUR performance was 8.54% for Q1–Q3 2026, not annualised. Past performance is not indicative of future results. <b>Capital is at risk, including total loss.</b> Collateral and hedging do not guarantee repayment. Redemptions depend on available liquidity.</p>
+    <div class="foot"><span>© 2026 ALCUM AG · Switzerland</span><span>Investor fact sheet of 1 October 2026 · <a href="https://alcum.com">alcum.com</a></span></div>
+  </div>
+</footer>
+
+<script>
+  // The audience gate: once per browser session, as the fact sheet itself requires.
+  (function () {
+    var gate = document.getElementById('gate');
+    var seen = false;
+    try { seen = sessionStorage.getItem('alcum.pro') === '1'; } catch (e) {}
+    if (!seen) { gate.hidden = false; document.body.style.overflow = 'hidden'; }
+    document.getElementById('gateYes').onclick = function () {
+      try { sessionStorage.setItem('alcum.pro', '1'); } catch (e) {}
+      gate.hidden = true; document.body.style.overflow = '';
+    };
+  })();
+</script>
+</body>
+</html>
